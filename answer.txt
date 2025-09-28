@@ -1,0 +1,13 @@
+Transfer Time vs File Size
+^
+|                *
+|              *
+|            *  
+|          *
+|        *
+|      *
+|    *
+|  *
++------------------> File Size
+
+This trends like this since the transfer time is tied to the file size linearly. The main bottleneck in this relationship is the size of the chunks that are being transferred between the client and server files. The smaller the chunk size is, the more the client and server have to send messages between them, thus causing the run time to increase.
